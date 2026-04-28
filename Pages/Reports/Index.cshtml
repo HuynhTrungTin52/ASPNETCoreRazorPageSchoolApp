@@ -1,0 +1,20 @@
+﻿@page
+@model SchoolAppCore.Pages.Reports.IndexModel
+
+@{
+    ViewData["Title"] = "Department Report";
+}
+
+<h2>Department Report Viewer</h2>
+
+@if (Model.WebReport != null)
+{
+    <div>
+        <!-- Render the WebReport Viewer -->
+        @await Model.WebReport.Render()
+    </div>
+}
+else
+{
+    <p>Report file not found. Please add a SampleReport.frx to the /Reports/ folder.</p>
+}

@@ -29,13 +29,13 @@
             @Html.DisplayNameFor(model => model.Enrollment.Course)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Enrollment.Course.Title)
+            @Html.DisplayFor(model => model.Enrollment.Course!.Title)
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Enrollment.Student)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Enrollment.Student.StudentID)
+            @Html.DisplayFor(model => model.Enrollment.Student!.StudentID)
         </dd>
     </dl>
     
